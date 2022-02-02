@@ -171,6 +171,7 @@ const Home = () => {
   //       stagger: 1,
   //     });
   //     window?.gsap.to(".hero-subline", {
+
   //       opacity: 1,
   //       delay: 2.5,
   //       duration: 1.5,
@@ -187,23 +188,33 @@ const Home = () => {
   //     });
   //   }, [window?.gsap]);
   useEffect(() => {
-    let fadein = document.getElementsByClassName("fade-in");
-    let riseUp = document.querySelectorAll(".rise-up");
-
+  
     window?.gsap.to(".hero-h1", {
       scrollTrigger: ".hero__wrap", // start the animation when ".box" enters the viewport (once)
       y: 0,
       delay: 1,
       duration: 1.5,
-      stagger: 1,
-    });
-    window?.gsap.from(".hero-banner", {
+      stagger: 1
+  });
+  window?.gsap.to(".hero-subline", {
+      opacity: 1,
+      delay: 3.5,
+      duration: 1.5
+  });
+  window?.gsap.from(".hero-link", {
       opacity: 0,
-      delay: 0.5,
-      duration: 1,
-    });
+      delay: 4,
+      duration: 1.5
+  });
+  window?.gsap.from(".hero-banner", {
+      opacity: 0,
+      delay: .5,
+      duration: 1
+  });
   }, [window?.gsap]);
 
+
+  
   useEffect(() => {
     setCount((prevCount) => prevCount + 1);
   }, [data]);
@@ -271,9 +282,9 @@ const Home = () => {
                 most of all, our clients choose us because we create impactful,
                 beautiful, brand defining designs that people love.
               </p>
-              <a href="contact-us.php" className="orange-link mt-3">
+              <Link to="/contact-us" className="orange-link mt-3">
                 Contact Us <i className="fas fa-chevron-right ml-2" />
-              </a>
+              </Link>
             </div>
             <div className="col-lg-6 mb-3 mb-lg-0">
               <div className="position-relative bg-frame">
@@ -329,9 +340,9 @@ const Home = () => {
                 secure and user friendly experience that adds real value to your
                 growing business.
               </p>
-              <a href="web-design.php" className="orange-link mt-3">
+              <Link to="/web-design" className="orange-link mt-3">
                 Learn More <i className="fas fa-chevron-right ml-2" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="row margin-more align-items-center fade-in">
@@ -349,12 +360,12 @@ const Home = () => {
                 effective SEO strategies that will improve your business ranking
                 on Google and other popular search engines.
               </p>
-              <a
-                href="search-engine-optimisation.php"
+              <Link
+                to="/search-engine-optimisation"
                 className="orange-link mt-3"
               >
                 Learn More <i className="fas fa-chevron-right ml-2" />
-              </a>
+              </Link>
             </div>
             <div className="col-lg-6 mb-3 mb-lg-0 switch-order">
               <div className="position-relative bg-frame">
@@ -395,9 +406,9 @@ const Home = () => {
                 often said that a picture paints a thousand words, and that’s
                 exactly what our graphics will do for your brand.
               </p>
-              <a href="graphic-design.php" className="orange-link mt-3">
+              <Link to="/graphic-design" className="orange-link mt-3">
                 Learn More <i className="fas fa-chevron-right ml-2" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="row margin-more align-items-center fade-in">
@@ -415,9 +426,9 @@ const Home = () => {
                 design and develop great looking apps that are functional, easy
                 to use and will add real value to your business.
               </p>
-              <a href="mobile-app-development.php" className="orange-link mt-3">
+              <Link to="/mobile-app-development" className="orange-link mt-3">
                 Learn More <i className="fas fa-chevron-right ml-2" />
-              </a>
+              </Link>
             </div>
             <div className="col-lg-6 mb-3 mb-lg-0 switch-order">
               <div className="position-relative bg-frame">
@@ -458,9 +469,9 @@ const Home = () => {
                 authentic content that’s relevant, on-trend and highly
                 shareable.
               </p>
-              <a href="social-media-marketing.php" className="orange-link mt-3">
+              <Link to="/social-media-marketing" className="orange-link mt-3">
                 Learn More <i className="fas fa-chevron-right ml-2" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="row margin-more fade-in">

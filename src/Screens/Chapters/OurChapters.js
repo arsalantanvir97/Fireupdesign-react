@@ -1,4 +1,5 @@
 import React,{useEffect} from 'react'
+import { Link } from 'react-router-dom';
 
 const OurChapters = () => {
 
@@ -98,7 +99,7 @@ const OurChapters = () => {
                   <span className="tag">CSS</span>
                 </div>
                 <p className="fw-body-text">We build, create and maintain websites that are easy on the eye and simple to navigate. Our website design and development services are all about giving your customers a fully functional, secure and user friendly experience that adds real value to your growing business.</p>
-                <a href="javascript:void(0)" className="orange-link mt-3">Learn More <i className="fas fa-chevron-right ml-2" /></a>
+                <Link to="/web-design" className="orange-link mt-3">Learn More <i className="fas fa-chevron-right ml-2" /></Link>
               </div>
             </div>
             <div className="row margin-more align-items-center fade-in">
@@ -116,7 +117,7 @@ const OurChapters = () => {
                     <li>Your company's credibility is judged based on your web design by 75% of your potential customer base.</li>
                     <li>A business with a poorly designed "mobile-friendly" website won't get recommended by 57% of internet users.</li>
                 </ul> */}
-                <a href="search-engine-optimisation.php" className="orange-link mt-3">Learn More <i className="fas fa-chevron-right ml-2" /></a>
+                <Link to="/search-engine-optimisation" className="orange-link mt-3">Learn More <i className="fas fa-chevron-right ml-2" /></Link>
               </div>
               <div className="col-lg-6 mb-3 mb-lg-0 switch-order">
                 <div className="position-relative bg-frame bg-frame">
@@ -143,7 +144,7 @@ const OurChapters = () => {
                   <span className="tag">Art</span>
                 </div>
                 <p className="fw-body-text">Good graphic design is about creating images that people can understand and recognise. Great graphic design is about creating images that are memorable, impactful and ooze quality. It’s often said that a picture paints a thousand words, and that’s exactly what our graphics will do for your brand.</p>
-                <a href="javascript:void(0)" className="orange-link mt-3">Learn More <i className="fas fa-chevron-right ml-2" /></a>
+                <Link to="/graphic-design" className="orange-link mt-3">Learn More <i className="fas fa-chevron-right ml-2" /></Link>
               </div>
             </div>
             <div className="row margin-more align-items-center fade-in">
@@ -156,7 +157,7 @@ const OurChapters = () => {
                   <span className="tag">Ux/Ui</span>
                 </div>
                 <p className="fw-body-text">These days it seems like there’s an app for everything, which means that your customers will expect one from you, too. We design and develop great looking apps that are functional, easy to use and will add real value to your business.</p>
-                <a href="javascript:void(0)" className="orange-link mt-3">Learn More <i className="fas fa-chevron-right ml-2" /></a>
+                <Link to="/mobile-app-development" className="orange-link mt-3">Learn More <i className="fas fa-chevron-right ml-2" /></Link>
               </div>
               <div className="col-lg-6 mb-3 mb-lg-0 switch-order">
                 <div className="position-relative bg-frame">
@@ -183,7 +184,7 @@ const OurChapters = () => {
                   <span className="tag">Marketing</span>
                 </div>
                 <p className="fw-body-text">Engaging with customers in a fast moving digital landscape demands a social media strategy that builds trust and sparks minds. We’ll help you set achievable goals and deliver original, authentic content that’s relevant, on-trend and highly shareable.</p>
-                <a href="javascript:void(0)" className="orange-link mt-3">Learn More <i className="fas fa-chevron-right ml-2" /></a>
+                <Link to="/social-media-marketing" className="orange-link mt-3">Learn More <i className="fas fa-chevron-right ml-2" /></Link>
               </div>
             </div>
             <div className="row margin-more fade-in">

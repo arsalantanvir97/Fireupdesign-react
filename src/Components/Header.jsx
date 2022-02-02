@@ -164,7 +164,7 @@ const Header = () => {
               </Link>
             </div>
             <div className="serviceCard">
-              <Link to="/seo">
+              <Link to="/search-engine-optimisation">
                 <div className="inner-w">
                   <div className="sc-top">
                     <img
@@ -225,9 +225,9 @@ const Header = () => {
             </div>
           </div>
           <div className="sc-d-footer text-center">
-            <a href="javascript:void(0)" className="orange-link">
+            <Link to="/our-chapters" className="orange-link">
               View all services <i className="fas fa-chevron-right ml-2" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="fullscreenMenu">

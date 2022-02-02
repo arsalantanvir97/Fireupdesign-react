@@ -20,6 +20,7 @@ const OurCollection = lazy(() => import("../../Screens/OurCollection/index"));
 
 const PortfolioDetail = lazy(() => import("../../Screens/Home/PortfolioDetail"));
 
+const SocialMedia = lazy(() => import("../../Screens/SocialMediaMarketing"));
 
 const Routes = () => {
   return (
@@ -30,11 +31,12 @@ const Routes = () => {
         <Route exact path="/web-design" component={WebDesign} />
         <Route exact path="/contact-us" component={Contact} />
         <Route exact path="/graphic-design" component={GraphicDesign} />
-        <Route exact path="/seo" component={SearchEngineOptimzation} />
+        <Route exact path="/search-engine-optimisation" component={SearchEngineOptimzation} />
         <Route exact path="/our-story" component={OurStory} />
         <Route exact path="/mobile-app-development" component={AppDevelopment} />
         <Route exact path="/our-chapters" component={Chapters} />
         <Route exact path="/our-collections" component={OurCollection} />
+        <Route exact path="/social-media-marketing" component={SocialMedia} />
 
         <Route exact path="/blogs" component={Blog} />
         <Route exact path="/privacy-policy" component={PrivacyPolicy} />

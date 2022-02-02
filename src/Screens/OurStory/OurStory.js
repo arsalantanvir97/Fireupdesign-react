@@ -115,30 +115,30 @@ const Story = () => {
       borgir.classList.toggle("active");
     });
 
-    let fadein = document.getElementsByClassName("fade-in");
-    let riseUp = document.querySelectorAll(".rise-up");
+    let fadein = document.getElementsByClassName('fade-in');
+    let riseUp = document.querySelectorAll('.rise-up');
 
     window?.gsap.to(".hero-h1", {
-      scrollTrigger: ".hero__wrap", // start the animation when ".box" enters the viewport (once)
-      y: 0,
-      delay: 1,
-      duration: 1.5,
-      stagger: 1,
+        scrollTrigger: ".hero__wrap", // start the animation when ".box" enters the viewport (once)
+        y: 0,
+        delay: 1,
+        duration: 1.5,
+        stagger: 1
     });
     window?.gsap.to(".hero-subline", {
-      opacity: 1,
-      delay: 2.5,
-      duration: 1.5,
+        opacity: 1,
+        delay: 2.5,
+        duration: 1.5
     });
     window?.gsap.from(".hero-link", {
-      opacity: 0,
-      delay: 3,
-      duration: 1.5,
+        opacity: 0,
+        delay: 4,
+        duration: 1.5
     });
     window?.gsap.from(".hero-banner", {
-      opacity: 0,
-      delay: 0.5,
-      duration: 1,
+        opacity: 0,
+        delay: .5,
+        duration: 1
     });
   }, [window?.gsap]);
 
